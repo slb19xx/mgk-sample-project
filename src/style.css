@@ -95,7 +95,7 @@ p {
 
 .social-links a {
   color: var(--primary-color) !important;
-  font-size: 28px;
+  font-size: 36px;
   text-decoration: none;
 }
 .social-links a:hover {
