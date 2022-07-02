@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #ff69b4;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -8,6 +8,10 @@ body {
   margin-top: 100px;
 }
 
+.navbar-brand,
+.navbar-toggler {
+  color: #ff69b4;
+}
 h1,
 h2,
 h3 {
@@ -48,7 +52,6 @@ p {
 }
 
 .navigation-links a {
-  margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -65,14 +68,14 @@ p {
   display: block;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+.connect-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
-.about-link {
-  color: var(--primary-color);
+.connect-link:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border: 1px solid var(--primary-color);
 }
 
@@ -85,16 +88,18 @@ p {
   margin: 10px;
 }
 
-.email-link {
+.social-links {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+}
+
+.social-links a {
+  color: var(--primary-color) !important;
   font-size: 28px;
   text-decoration: none;
 }
-
-.email-link:hover {
-  text-decoration: underline;
+.social-links a:hover {
+  opacity: 0.7;
 }
 
 .launch-app-links {
@@ -106,9 +111,18 @@ p {
   text-decoration: none;
 }
 
+.launch-app-links:hover {
+  background: #f5f2fe;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+}
+
 @media (max-width: 576px) {
-  .homepage-images {
+  .subheading-text {
     display: none;
+  }
+  .homepage-images {
+    display: 100%;
   }
   .app-link {
     display: block;
